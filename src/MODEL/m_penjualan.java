@@ -108,6 +108,7 @@ public class m_penjualan implements c_penjualan {
                 prepare.executeUpdate();
                 tampil(penjualan);
                 reset(penjualan);
+                JOptionPane.showMessageDialog(penjualan, "Data Berhasil di Simpan");
             } catch (SQLException err) {
                 JOptionPane.showMessageDialog(penjualan, err.getMessage(), "Warning", JOptionPane.WARNING_MESSAGE);
             }

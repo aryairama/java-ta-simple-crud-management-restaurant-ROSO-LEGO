@@ -79,6 +79,7 @@ public class m_menu implements c_menu {
                     prepare.executeUpdate();
                     tampil(menu);
                     reset(menu);
+                    JOptionPane.showMessageDialog(menu, "Data Berhasil di Simpan");
                 } catch (SQLException err) {
                     JOptionPane.showMessageDialog(menu, err.getMessage(), "Warning", JOptionPane.WARNING_MESSAGE);
                 }
